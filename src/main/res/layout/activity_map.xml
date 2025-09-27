@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ru.dgis.sdk.map.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:dgis_cameraTargetLat="42.8746"
+        app:dgis_cameraTargetLng="74.6122"
+        app:dgis_cameraZoom="11">
+
+        <ru.dgis.sdk.navigation.NavigationView
+            android:id="@+id/navigationView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ru.dgis.sdk.navigation.DefaultNavigationControls
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </ru.dgis.sdk.navigation.NavigationView>
+    </ru.dgis.sdk.map.MapView>
+</FrameLayout>
+
+
+
