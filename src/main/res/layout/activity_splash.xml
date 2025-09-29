@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/splash"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_shape">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/food_pizza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="152dp"
+        android:src="@drawable/logo" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/food_circle"
+        android:layout_width="340dp"
+        android:layout_height="340dp"
+        android:layout_gravity="bottom|end"
+        android:rotation="-90"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image_of_a_plate_with_gray"
+        android:translationX="48dp"
+        android:translationY="79dp"
+        app:shapeAppearanceOverlay="@style/CircleImage" />
+
+</FrameLayout>
